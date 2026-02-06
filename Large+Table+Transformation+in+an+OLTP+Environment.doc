@@ -1,0 +1,460 @@
+Date: Fri, 6 Feb 2026 22:07:43 +0000 (UTC)
+Message-ID: <1484596932.29.1770415663241@fe3e8093c160>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_28_1146739315.1770415663241"
+
+------=_Part_28_1146739315.1770415663241
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Large Table Transformation in an OLTP Environment</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Large Table Transformation in an OLTP Environment</h1>
+    <div class=3D"Section1">
+        <p>Let=E2=80=99s say we desire to apply a transformation to a large=
+ table. Under normal circumstances, such an operation may take many hours a=
+nd cause significant blocking and customer downtime. Examples of such trans=
+formations include adding a new non-nullable column, changing a primary key=
+, or otherwise updating every single row in the table, etc. Through a combi=
+nation of tables, a view, and triggers, it is possible to accomplish operat=
+ions like this with almost no downtime.</p>
+<p></p>
+<p>The idea is to create a new, empty table with the desired schema. The ex=
+isting table will be renamed and a view created with the same name as the o=
+riginal table. The view will query data from both the existing and new tabl=
+es. This will allow existing consumers of the data to continue with busines=
+s as usual with no changes and (almost) no downtime. Triggers (which will c=
+ontain the transformation logic) will be created to intercept DML operation=
+s on the table and dispatch them like this:</p>
+<ul>
+<li>
+<p>Inserts will be applied only to the new table</p></li>
+<li>
+<p>Deletes will be applied to both the current and new tables</p></li>
+<li>
+<p>Updates will occur on the new table where the rows already exist there. =
+Rows in the current table will be moved.</p></li>
+</ul>
+<p></p>
+<p>Once the setup is completed, a job can be started to transform existing =
+rows in batches with a short delay between each batch. This job can be tune=
+d as to batch size and time of day it is run in order to complete the trans=
+formation is quickly as feasible without impacting operations. Depending on=
+ the sensitivity of operations to these updates, it may be best to only run=
+ this during off-hours. There is no single answer as to the best batch size=
+, delay, or time of day. It is best to tune with some testing in a non-prod=
+uction environment, but also design the job in such a way that it can be co=
+nfigured in real-time with regards to batch size, delay, and hours of opera=
+tion.</p>
+<p></p>
+<p>Note that while it is possible to leave this setup in place indefinitely=
+ and let it completely transform organically, I would highly caution agains=
+t such an approach. Eventually other schema changes will be needed on the t=
+able. It becomes complicated to incorporate this next generation of changes=
+ into this setup. Get the data transformed as quickly as feasible and tear =
+this down.</p>
+<p></p>
+<p>Setup</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: sql; gutter: false; theme: Confluence" data-theme=3D"Confluence">-- This =
+is the original, existing "big" table
+CREATE TABLE [dbo].[BigTable]
+(
+=09[BigTableID]=09INT IDENTITY(1, 1)=09NOT NULL,
+=09[Column1]=09=09VARCHAR(20)=09=09=09NOT NULL,=09
+=09[Column2]=09=09VARCHAR(20)=09=09=09NOT NULL,
+=09CONSTRAINT [PK_BigTable] PRIMARY KEY CLUSTERED ([BigTableID])
+);
+
+
+-- We desire to add a new column non-nullable column (NewColumn) to the tab=
+le.
+-- We will add it to a new table and transform the data from the old table =
+to the new table over a period of time.
+-- In steps below, we create a view and triggers to completely insulate thi=
+s change from the application while we migrate the data.
+-- This is done with almost no downtime.
+CREATE TABLE [dbo].[BigTable_new]
+(
+=09[BigTableID]=09INT IDENTITY(1, 1)=09NOT NULL,
+=09[Column1]=09=09VARCHAR(20)=09=09=09NOT NULL,=09
+=09[Column2]=09=09VARCHAR(20)=09=09=09NOT NULL,
+=09[NewColumn]=09VARCHAR(20)=09=09=09=09NOT NULL,
+=09CONSTRAINT [PK_BigTable_new] PRIMARY KEY CLUSTERED ([BigTableID])
+
+);
+
+-- Rename the existing table. After this operation and until the 3 views be=
+low are created, inserts, updates, and deletes will fail.
+-- The good news is that this is a sub-second operation. As an alternative,=
+ we could place a lock on the table before these next 4 steps and
+-- then release it after. That would cause any operations to be blocked (be=
+ slightly slower from their point of view) vs. a hard failure.
+EXECUTE sp_rename 'dbo.BigTable', 'BigTable_old';
+
+
+-- This view will take on the desired table name so that no existing code n=
+eeds to change. It will union together the data from the old and new tables=
+.
+CREATE VIEW [dbo].[BigTable]
+AS
+
+SELECT
+=09[BigTableID],
+=09[Column1],
+=09[Column2],
+=09NULL AS NewColumn
+FROM
+=09[dbo].[BigTable_old]
+
+UNION ALL
+
+SELECT
+=09[BigTableID],
+=09[Column1],
+=09[Column2],
+=09[NewColumn]
+FROM
+=09[dbo].[BigTable_new];
+
+
+-- This trigger will ensure that all inserts occur to the new table
+CREATE TRIGGER [dbo].[tri_BigTable] ON [dbo].[BigTable]
+INSTEAD OF INSERT
+AS
+BEGIN
+
+=09INSERT INTO [dbo].[BigTable_new]
+=09(
+=09=09[Column1],
+=09=09[Column2],
+=09=09[NewColumn]
+=09)
+=09SELECT
+=09=09[Column1],
+=09=09[Column2],
+=09=09[NewColumn]
+=09FROM Inserted;
+
+END;
+
+
+-- This trigger will trying deleting rows from both tables
+CREATE TRIGGER [dbo].[trd_BigTable] ON [dbo].[BigTable]
+INSTEAD OF DELETE
+AS
+BEGIN
+
+
+=09DELETE bto
+=09FROM [dbo].[BigTable_old] bto
+=09=09INNER JOIN Inserted i ON [bto].[BigTableID] =3D [i].[BigTableID];
+
+=09DELETE btn
+=09FROM [dbo].[BigTable_new] btn
+=09=09INNER JOIN Inserted i ON [btn].[BigTableID] =3D [i].[BigTableID];
+
+END;
+
+
+-- This trigger moves rows from the old table to the new as it updates or s=
+imply updates the row in place if they are already in the new table
+CREATE TRIGGER [dbo].[tru_BigTable] ON [dbo].[BigTable]
+INSTEAD OF UPDATE
+AS
+BEGIN
+
+=09BEGIN TRANSACTION
+
+=09-- Update rows that are already in the new table
+=09UPDATE dtn
+=09SET
+=09=09[dtn].Column1 =3D [i].[Column1],
+=09=09[dtn].[Column2] =3D [i].[Column2],
+=09=09[dtn].[NewColumn] =3D [i].[NewColumn]
+=09FROM [dbo].[BigTable_new] dtn
+=09=09INNER JOIN Inserted i on [dtn].[BigTableID] =3D [i].[BigTableID];
+
+=09-- Insert rows into the new table that are in the old table
+=09INSERT INTO [dbo].[BigTable_new]
+=09(
+=09=09[Column1],
+=09=09[Column2],
+=09=09[NewColumn]
+=09)
+=09SELECT
+=09=09[i].[Column1],
+=09=09[i].[Column2],
+=09=09'NewColumn Default Value'
+=09FROM Inserted i
+=09WHERE [i].[BigTableID] IN (SELECT 1 FROM [dbo].[BigTable_old] WHERE [Big=
+TableID] =3D [i].[BigTableID]);
+
+=09-- Delete rows from the old table
+=09DELETE bto
+=09FROM [dbo].[BigTable_old] bto
+=09=09INNER JOIN Inserted i ON [bto].[BigTableID] =3D [i].[BigTableID];
+
+=09COMMIT TRANSACTION
+
+END;
+
+/* Cleanup all objects
+DROP TRIGGER IF EXISTS [dbo].[tri_BigTable];
+DROP TRIGGER IF EXISTS [dbo].[tru_BigTable];
+DROP TRIGGER IF EXISTS [dbo].[trd_BigTable];
+GO
+DROP VIEW IF EXISTS [dbo].[BigTable];
+GO
+DROP TABLE IF EXISTS [dbo].[BigTable];
+DROP TABLE IF EXISTS [dbo].[BigTable_old];
+DROP TABLE IF EXISTS [dbo].[BigTable_new];
+*/</pre>
+</div>
+</div>
+<p></p>
+<p>Teardown (to be done when the row count in BigTable_old is 0</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">-- Simi=
+lar to the initial setup, inserts, updates, and deletes will fail after the=
+ triggers are dropped and before the table rename has occured.
+-- The good news is that this is a sub-second operation. As an alternative,=
+ we could place a lock on the table before these next 4 steps and
+-- then release it after. That would cause any operations to be blocked (be=
+ slightly slower from their point of view) vs. a hard failure.
+DROP TRIGGER IF EXISTS [dbo].[tri_BigTable];
+DROP TRIGGER IF EXISTS [dbo].[tru_BigTable];
+DROP TRIGGER IF EXISTS [dbo].[trd_BigTable];
+DROP VIEW IF EXISTS [dbo].[BigTable];
+EXECUTE sp_rename 'dbo.BigTable_new', 'BigTable';
+DROP TABLE IF EXISTS [dbo].[BigTable_old];</pre>
+</div>
+</div>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_28_1146739315.1770415663241--
